@@ -1,1 +1,35 @@
-<p>dashboard works!</p>
+<div class="top">
+  <h2>Bank Charge</h2>
+  <button (click)="handleNavigate()">Input Bank Charge</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Bank Name</th>
+      <th>Month</th>
+      <th>Project Code</th>
+      <th>Project Name</th>
+      <th>Instrument Type</th>
+      <th>Instrument No</th>
+      <th>Charge Type</th>
+      <th>Batch No</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of allData">
+      <td><input type="checkbox" /></td>
+      <td>{{ item.bank }}</td>
+      <td>{{ item.month }}</td>
+      <td>{{ item.project_code }}</td>
+      <td>{{ item.project_name }}</td>
+      <td>{{ item.instm_type }}</td>
+      <td>{{ item.instm_no }}</td>
+      <td>{{ item.charge_type }}</td>
+      <td>{{ item.batch_no }}</td>
+      <td>"pending"</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,36 @@
+
+
+<div class="container">
+  <div class="left"></div>
+  <div class="right">
+    <h2>Bank Charge Maker</h2>
+    <form #userLogin="ngForm" (submit)="getData(userLogin.value)">
+      <input
+        type="text"
+        ngModel
+        name="name"
+        class="input"
+        placeholder="Username"
+      />
+      <input
+        type="password"
+        ngModel
+        name="password"
+        class="input"
+        placeholder="Password"
+      />
+
+      <div class="text">
+        <div>
+          <input type="checkbox" />
+          <span>Remember me</span>
+        </div>
+        <p>Forgot Password</p>
+      </div>
+      <div class="btn-grp">
+        <button class="login">Login</button>
+        <button disabled="true" class="signup">Signup</button>
+      </div>
+    </form>
+  </div>
+</div>

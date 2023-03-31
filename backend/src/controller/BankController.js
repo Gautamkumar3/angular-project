@@ -13,7 +13,7 @@ const addBankCharges = async (req, res) => {
 const getBankCharges = async (req, res) => {
   try {
     const BankCharges = await BankChargesModal.find();
-    res.status(200).send({ status: "success", data: BankCharges });
+    res.status(200).send(BankCharges);
   } catch (er) {
     res.status(401).send({ status: "error", message: er.message });
   }
