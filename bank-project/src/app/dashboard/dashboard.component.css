@@ -32,3 +32,13 @@ th {
   color: #fff;
   height: 40px;
 }
+
+.accept {
+  color: green;
+  font-weight: bold;
+}
+
+.reject {
+  color: red;
+  font-weight: bold;
+}

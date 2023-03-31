@@ -12,4 +12,12 @@ export class BankdataService {
   getBankData() {
     return this.http.get<any[]>(this.url);
   }
+
+  addBankData(data: any) {
+    return this.http.post(this.url, data);
+  }
+
+  updateStatus(id: any, data: any) {
+    return this.http.patch(`${this.url}/${id}`, data);
+  }
 }

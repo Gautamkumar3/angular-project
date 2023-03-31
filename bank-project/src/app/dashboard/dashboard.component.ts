@@ -16,6 +16,14 @@ export class DashboardComponent {
     });
   }
 
+  getCheckBoxValue(e: any, id: any) {
+    let check = e.target.checked;
+
+    this.bankData.updateStatus(id, { status: check }).subscribe((res) => {
+     
+    });
+  }
+
   handleNavigate() {
     this.router.navigate(['/bank-charge']);
   }

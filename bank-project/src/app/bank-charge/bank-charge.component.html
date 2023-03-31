@@ -1,9 +1,8 @@
 <div class="container">
-    
   <div class="charge">
     <h2>Bank Charge</h2>
   </div>
- 
+
   <div>
     <form #saveBank="ngForm" (submit)="sendData(saveBank.value)">
       <div class="top_head">
@@ -14,37 +13,57 @@
         <div>
           <label for="month">Month</label>
           <br />
-          <input type="text" name="month" placeholder="Month" />
+          <input ngModel type="month" name="month" placeholder="Month" />
         </div>
 
         <div>
           <label for="project_code">Project Code</label>
           <br />
-          <input type="text" name="project_code" placeholder="Project code" />
+          <input
+            ngModel
+            type="text"
+            name="project_code"
+            placeholder="Project code"
+          />
         </div>
 
         <div>
           <label for="project_name">Project Name</label>
           <br />
-          <input type="text" name="project_name" placeholder="Project name" />
+          <input
+            ngModel
+            type="text"
+            name="project_name"
+            placeholder="Project name"
+          />
         </div>
 
         <div>
           <label for="instm_type">Instrument Type</label>
           <br />
-          <input type="text" name="instm_type" placeholder="Instrument type" />
+          <input
+            ngModel
+            type="text"
+            name="instm_type"
+            placeholder="Instrument type"
+          />
         </div>
 
         <div>
           <label for="bank">Bank</label>
           <br />
-          <input type="text" name="bank" placeholder="Bank" />
+          <input ngModel type="text" name="bank" placeholder="Bank" />
         </div>
 
         <div>
           <label for="charge_type">Charge Type</label>
           <br />
-          <input type="text" name="charge_type" placeholder="Charge Type" />
+          <input
+            ngModel
+            type="text"
+            name="charge_type"
+            placeholder="Charge Type"
+          />
         </div>
       </div>
     </form>

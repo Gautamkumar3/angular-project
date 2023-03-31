@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { BankdataService } from '../services/bankdata.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bank-charge',
@@ -7,7 +9,19 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./bank-charge.component.css'],
 })
 export class BankChargeComponent {
+  constructor(private bankData: BankdataService, private router: Router) {}
+
   sendData(data: NgForm) {
-    console.log(data);
+    this.bankData.addBankData(data).subscribe(
+      (res: any) => {
+        if (res.status === 'success') {
+          alert('Data send for approval successfully');
+          this.router.navigate(['/']);
+        }
+      },
+      (error) => {
+        alert(error.error.message);
+      }
+    );
   }
 }
