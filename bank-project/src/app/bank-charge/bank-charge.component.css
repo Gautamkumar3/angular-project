@@ -1,0 +1,57 @@
+.form_input {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 5%;
+  padding: 2%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.container {
+  background-color: rgba(219, 215, 215, 0.511);
+  padding: 3% 0;
+}
+
+input {
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.charge {
+  background-color: rgba(219, 215, 215, 0.511);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.top_head {
+  width: 83%;
+  background-color: #fff;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.top_head > button {
+  background-color: rgb(29, 29, 215);
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
+.top_head > button {
+  cursor: pointer;
+}
