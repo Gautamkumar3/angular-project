@@ -20,7 +20,9 @@ export class DashboardComponent {
     let check = e.target.checked;
 
     this.bankData.updateStatus(id, { status: check }).subscribe((res) => {
-     
+        this.bankData.getBankData().subscribe((res) => {
+          this.allData = res;
+        });
     });
   }
 

@@ -5,7 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class UserauthService {
-  url = 'http://localhost:8080/user/login';
+  // url = 'http://localhost:8080/user/login';
+  url = 'https://tech-api-n991.onrender.com/user/login';
 
   constructor(private http: HttpClient) {}
 
